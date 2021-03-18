@@ -6,23 +6,25 @@
     --Bright-Yellow: hsl(71, 73%, 54%);
     /*neutral*/
     --Light-Gray: hsl(204, 43%, 93%);
-    --Grayish-Blue: hsl(218, 22%, 67%);
-    
+    --Grayish-Blue: hsl(218, 22%, 67%);    
 }
 html{
     font-family: 'Karla', sans-serif; 
     font-size: 16px;  
     font-weight: 400; 
 }
-
 body{
-    background-color: var(--Light-Gray);
-    margin: 4rem 2rem; 
+    background-color: var(--Light-Gray);    
+    margin: 0;    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 .container{  
-    display: grid;
-    grid-template-rows: 260px 200px 260px;
+    max-width: 312px;
+    display: grid;    
     border-radius: 0.5rem;    
     overflow: hidden;    
     box-shadow: 0.5rem 2rem 7rem var(--Grayish-Blue);
@@ -71,7 +73,7 @@ body{
     font-weight: 700;
 }
 
-.main__price{
+.main__offer{
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
